@@ -1,0 +1,12 @@
+/*去掉img父容器设置border后下面有3px的白色边框*/
+img{
+	display: block;
+}
+ul{
+	list-style: none;
+}
+body{
+	font-size: 14px;
+	background: #EBEBEB;
+
+}

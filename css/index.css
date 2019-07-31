@@ -1,0 +1,434 @@
+
+/*inner开始*/
+.inner{
+	left: 50%;
+	transform: translateX(-50%);
+	width: 1000px;
+	position: absolute;
+	top: 0;
+	z-index: 100;
+}
+.inner .head{
+	width: 992px;
+	top: 19px;
+	position: absolute;
+	height: 103px;
+}
+.inner .head h1{
+	float: left;
+	text-indent: -999em;
+	width: 151px;
+	height: 103px;
+	background:url(../images/logo.png) no-repeat; 
+}
+.inner .head ul{
+	float: left;
+	height: 91px;
+}
+.inner .head ul li{
+	float: left;
+	width: 121px;
+	height: 100%;
+	border-right: 1px solid #EAEAEA;
+	box-sizing:border-box;
+	background: #ffffff;
+}
+.inner .head ul .chance{
+	width: 115px;
+}
+.inner .head ul li a{
+	display: block;
+	text-align: center;
+	height: 100%;
+	padding-top: 29px;
+	box-sizing:border-box;
+
+}
+.inner .head ul li a:hover{
+	position: relative;
+	border-top: 4px solid #F28D00;
+	height: 87px;
+	top: -4px;
+	background: #F9F9F9;
+}
+.inner .head ul li a p:first-child{
+	color: #5E605F;
+	font-size: 15px;
+	line-height: 25px;
+}
+.inner .head ul li a p:last-child{
+	color: #CCCACB;
+	font-size: 16px;
+	line-height: 28px;
+}
+/*banner开始*/
+.banner{
+	width: 100%;
+	overflow: hidden;
+	height: 665px;
+	position: relative;
+}
+	/*第一种写法*/
+	 /*用img实现图片中心居中屏幕显示 */
+.banner .imgs{
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	/*margin-left: -960px;*/
+}
+.banner .imgs ul{
+	position: relative;
+	width: 1920px;
+}
+.banner .imgs ul li{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.banner .imgs ul li:first-child{
+	z-index: 5;
+}
+	/*第二种写法*/
+	/*用background实现图片中心居中屏幕显示*/
+/*.banner{
+	width: 100%;
+
+}
+.banner .imgs{
+	width: 100%;
+}
+.banner .imgs ul{
+	width: 100%;
+}
+.banner .imgs ul li{
+	width: 100%;
+	height: 665px;
+	background: url(../images/banner1.jpg) no-repeat center 0;
+}*/
+	/*banner小圆点*/
+.banner .inner{
+	position: relative;
+}
+.banner .inner ol{
+	position: absolute;
+	width: 15px;
+	height: 270px;
+	background: url(../images/indexbg.png) repeat-y center 0 ;
+	top:218px;
+	left: 0;
+}
+.banner .inner ol li{
+	background: url(../images/circle.png) no-repeat center 0; 
+	width: 15px;
+	height: 15px;
+	margin-bottom: 70px;
+	position: relative;
+}
+.banner .inner ol li a{
+	display: block;
+	background: url(../images/icon.png) no-repeat 0 0; 
+	width: 103px;
+	height: 43px;
+	position: absolute;
+	top:-14.5px;
+	left: -75.5px;
+	display: none;
+}
+.banner .inner ol li.cur a{
+	display: block;
+}
+
+
+.banner .inner .video{
+	position: absolute;
+	width: 151px;
+	height: 89px;
+	top: 504px;
+	right: 33px;
+	background: url(../images/video.png) no-repeat; 
+}
+	/*new部分*/
+.content{
+	width: 100%;
+	background:url(../images/mainbg.png) no-repeat center top;
+	/*overflow: hidden;*/
+	height: 837px;
+}
+.content .inner{
+	position: relative;
+	height: 20px;
+	background: #F3F3F3;
+}
+.content .inner .new{
+	position: absolute;
+	top:-54px;
+	background: #ffffff;
+	height: 54px;
+	width: 100%;
+	left: 50%;
+	transform: translateX(-50%);
+	padding:18px 21px 0 20px;
+	box-sizing:border-box;
+	z-index: 9999;
+}
+.content .inner .new p{
+	float: left;
+	line-height: 22px;
+	font-size: 14px;
+	width: 91px;
+	height: 22px;
+}
+.content .inner .new .wrapper{
+	width: 655px;
+	height: 17px;
+	float: left;	
+	overflow: hidden;
+	position: relative;
+}
+.content .inner .new ul{
+	width: 655px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.content .inner .new  ul li{
+	line-height: 17px;
+	font-size: 12px;
+	width: 100%;
+	height: 17px;
+	color: #697B7D;
+}
+.content .inner .new  ul li p{}
+.content .inner .new  ul li span{
+	color: #C4B7A7;
+}
+.content .inner .new  .control{
+	float: left;
+	width: 46px;
+	height: 16px;
+}
+.content .inner .new  .control .to_left{
+	width: 23px;
+	height: 16px;
+	display: inline-block;
+	background: url(../images/btn_bg.png) no-repeat -1px 0px;
+
+}
+.content .inner .new  .control .to_right{
+	width: 23px;
+	height: 16px;
+	display: inline-block;
+	background: url(../images/btn_bg.png) no-repeat -23.5px 0;
+}
+.content .inner .new  .control .to_left:hover{
+	background: url(../images/btn_bg.png) no-repeat -1px -17px ;
+}
+.content .inner .new  .control .to_right:hover{
+	background: url(../images/btn_bg.png) no-repeat -23.5px -17px ;
+}
+.content .inner .new  .more{
+	float: right;
+	background: #DCDCDC;
+	color: #FFFFFF;
+	width: 67px;
+	height: 27px;
+	line-height: 27px;
+	text-align: center;
+}
+.content .inner .case{
+	border-top:1px solid #E1E1E1;
+	border-bottom:1px solid #DDDDDD;
+	height: 368px;
+	width: 100%;
+	padding: 3px 20px 0 20px;
+	box-sizing:border-box;
+	background: #F3F3F3;
+}
+.content .inner .case ul{
+	overflow: hidden;
+}
+.content .inner .case ul li{
+	float: left;
+	width: 304px;
+	margin-right: 24px;
+}
+.content .inner .case ul li:last-child{
+	margin-right: 0;
+}
+.content .inner .case ul li .top{
+	height: 50px;
+	line-height: 50px;
+	font-size: 16px;
+	width: 100%;
+}
+.content .inner .case ul li .top p{
+	float: left;
+
+}
+.content .inner .case ul li .top a{
+	float: right;
+	text-decoration: underline;
+	font-size: 12px;
+	color: #ABA5B1;
+}
+.content .inner .case ul li .img{
+	width: 299px;
+	height: 193px;
+	background: url(../images/bubble.png) no-repeat;
+	padding: 14px 11px 0 10px;
+	box-sizing: border-box;
+}
+.content .inner .case ul li .img img{
+	width: 279px;
+	height: 152px;
+}
+.content .inner .case ul li .des{
+	line-height: 23px;
+	font-size: 11px;
+	margin-top: 9px;
+	color: #A19E95;
+}
+.content .inner .hot{
+	width: 100%;
+	height: 188px;
+	padding: 18px 20px 0 20px; 
+	box-sizing:border-box;
+	background: #F3F3F3 url(../images/con_b_bg.png) no-repeat center bottom;
+}
+.content .inner .hot p{
+	font-size: 16px;
+	line-height: 23px;
+	float: left;
+}
+.content .inner .hot .control{
+	width: 56px;
+	height: 25px;
+	float: right;
+	position: relative;
+}
+.content .inner .hot .control .to_left{
+	display: block;
+	position: absolute;
+	height: 100%;
+	width: 28px;
+	top: 0;
+	left: 0;
+	background: url(../images/btn_bg.png) no-repeat -1px -39px;	
+}
+.content .inner .hot .control .to_right{
+	display: block;
+	position: absolute;
+	height: 100%;
+	width: 29px;
+	top: 0;
+	left: 27px;
+	background: url(../images/btn_bg.png) no-repeat -27px -39px;	
+}
+.content .inner .hot .control .to_left:hover{
+	background: url(../images/btn_bg.png) no-repeat -1px -65px;	
+}
+.content .inner .hot .control .to_right:hover{
+	background: url(../images/btn_bg.png) no-repeat -27px -65px;
+}
+.content .inner .friend{
+	width: 100%;
+	background: #E6E6E6;
+	height: 281px;
+}
+.content .inner .friend .top{
+	height: 51px;
+	width: 100%;
+	padding-top: 8px;
+	box-sizing:border-box;
+}
+.content .inner .friend .top h3{
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 28px;
+	color: #615B5F;
+}
+.content .inner .friend .top h4{
+	color: #676767;
+	font-size: 11px;
+	line-height: 23px;
+}
+.content .inner .friend .buttom{
+	width: 100%;
+	overflow: hidden;
+}
+.content .inner .friend .buttom .list{
+	width: 805px;
+	height: 204px;
+	margin-top: 17px;
+	float: left;
+}
+.content .inner .friend .buttom .list .ul1{
+	margin-left: 29px;
+}
+.content .inner .friend .buttom .list .ul1 .li1{
+	float: left;
+	margin-right: 61px;
+}
+.content .inner .friend .buttom .list .ul1 .Pomelo{
+	margin-right: 45px;
+}
+.content .inner .friend .buttom .list .ul1>li:last-child{
+	float: left;
+	margin-right: 50px;
+}
+.content .inner .friend .buttom .list .ul1 .li1 h3{
+	line-height: 49px;
+	font-size: 12px;
+	font-weight: bold;
+	color: #63625E;
+}
+.content .inner .friend .buttom .list .ul1 .li1 ul{}
+.content .inner .friend .buttom .list .ul1 .li1 ul li{
+	font-size: 11px;
+	line-height: 11px;
+	padding-bottom:12px;
+	color: #A1A79D;
+}
+.content .inner .friend .buttom .code{
+	float: left;
+	width: 102px;
+	height: 160px;
+	margin-top: 31px;
+}
+.content .inner .friend .buttom .code img{}
+.content .inner .friend .buttom .code p{
+	font-size: 11px;
+	line-height: 29px;
+	color: #8D8489;
+	margin: o auto;
+	text-align: center;
+}
+.content .inner .friend .buttom .code span{
+	display: block;
+	width: 62px;
+	height: 22px;
+	margin: 0 auto;
+	background: url(../images/weibo.png);
+}
+.footer{
+	height: 58px;
+	width: 100%;
+	background: #2B2B2B;
+	line-height: 58px;
+	color: #BCB7BB;
+	font-size: 12px;
+}
+.footer .inner{
+	position: relative;
+}
+.footer .inner p{
+	float: left;
+	font-size: 12px;
+}
+.footer .inner p:nth-child(2){
+	margin-left: 209px;
+}
+.footer .inner p:last-child{
+	margin-left: 12px;
+	color: #8B8B81;
+}
