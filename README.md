@@ -7,7 +7,7 @@ pc端静态首页（安徽龙禧）
 https://xufyi.github.io/anhuilongxi/index.html
 首次打开页面可能会有加载不全的情况，刷新再预览就可以。
 
-效果演示：
+效果演示：（演示图片可能加载过慢，直接点击在线预览吧！）
 -------
 <div align=center>
    <img src="https://github.com/Xufyi/anhuilongxi/blob/master/longxi.gif" width="923" height="556">  
